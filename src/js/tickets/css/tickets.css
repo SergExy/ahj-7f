@@ -1,0 +1,25 @@
+.tickets {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tickets__header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tickets__btn {
+  display: block;
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tickets__list {
+  display: grid;
+  gap: 10px;
+}

@@ -1,0 +1,35 @@
+.ticketCard {
+  display: grid;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .25);
+  gap: 15px;
+  grid-template-columns: 24px 1fr 200px 24px 24px;
+}
+
+.ticketCard__status {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #454545;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.ticketCard__status_checked {
+  color: #0cdf6b;
+  border-color: #0cdf6b;
+}
+.ticketCard__status_checked:before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.ticketCard__edit,
+.ticketCard__delete {
+  cursor: pointer;
+  font-size: 18px;
+}
